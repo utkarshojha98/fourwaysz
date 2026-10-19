@@ -1,0 +1,23 @@
+<form class="req" id="req" novalidate>
+  <div class="f full"><label for="r-prop">Property name</label><input id="r-prop" name="prop" required autocomplete="organization"></div>
+  <fieldset class="f full chips"><legend>Type</legend>
+    <label><input type="radio" name="type" value="Hotel" checked><span>Hotel</span></label>
+    <label><input type="radio" name="type" value="Café or restaurant"><span>Café or restaurant</span></label>
+    <label><input type="radio" name="type" value="School"><span>School</span></label>
+    <label><input type="radio" name="type" value="Hospital"><span>Hospital</span></label>
+    <label><input type="radio" name="type" value="Other"><span>Other</span></label>
+  </fieldset>
+  <div class="f"><label for="r-size">Rooms or covers per day <small>(optional)</small></label><input id="r-size" name="size" inputmode="numeric"></div>
+  <div class="f"><label for="r-city">City</label><input id="r-city" name="city" required autocomplete="address-level2"></div>
+  <fieldset class="f full chips"><legend>Product to try first</legend>
+    <label><input type="radio" name="prod" value="Dishwash" checked><span>Dishwash</span></label>
+    <label><input type="radio" name="prod" value="Floor cleaner"><span>Floor cleaner</span></label>
+    <label><input type="radio" name="prod" value="Multi-surface"><span>Multi-surface</span></label>
+    <label><input type="radio" name="prod" value="Hand wash"><span>Hand wash</span></label>
+  </fieldset>
+  <div class="f"><label for="r-name">Your name</label><input id="r-name" name="name" required autocomplete="name"></div>
+  <div class="f"><label for="r-phone">Phone (WhatsApp)</label><input id="r-phone" name="phone" type="tel" required pattern="[0-9+ \-]{10,15}" autocomplete="tel"></div>
+  <div class="f full"><label for="r-pay">What you pay your current supplier <small>(optional, per can or per month)</small></label><input id="r-pay" name="pay"></div>
+  <div class="actions"><button class="btn btn-navy" type="submit">Send my sample request</button></div>
+  <p class="note" id="r-msg">We reply within one working day. We never share your details.</p>
+</form>
